@@ -1,0 +1,335 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+} 
+  
+body { 
+    height: 90vh; 
+
+    background: linear-gradient(to right, rgb(117, 177, 238), rgb(227, 153, 165));
+
+} 
+  
+.container-captha { 
+    width: 30rem; 
+    background-color: #ffffff; 
+    padding: 70px; 
+    border-radius: 30px; 
+    position: absolute; 
+    transform: translate(-50%, -50%); 
+    top: 45%; 
+    left: 50%; 
+    box-shadow: 0px 0px 30px 0px black; 
+} 
+  
+.heading { 
+    margin: 50px; 
+    font-size: 30px; 
+    text-align: center; 
+    color: green; 
+} 
+  
+.wrapper { 
+    display: flex; 
+    align-content: center; 
+    justify-content: space-between; 
+    margin: 1em 0; 
+} 
+  
+canvas { 
+    border: 2px solid rgb(162, 24, 61); 
+    border-radius: 20px; 
+} 
+  
+button#reload-button { 
+    font-size: 26px; 
+    width: 4.6em; 
+    background-color: rgb(20, 96, 196); 
+    cursor: pointer; 
+    border: none; 
+    border-radius: 0.4em; 
+    color: #ffffff; 
+} 
+  
+button#reload-button:hover { 
+    background-color: rgb(141, 76, 76); 
+} 
+  
+input[type='text'] { 
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 1rem; 
+    width: 100%; 
+    padding: 16px; 
+    border: 2px solid rgb(2, 0, 128); 
+    border-radius: 20px; 
+} 
+
+input[type='number'] { 
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 1rem; 
+    width: 100%; 
+    padding: 16px; 
+    border: 2px solid green ; 
+    border-radius: 20px; 
+}
+  
+button#submit-button { 
+    width: 100%; 
+    color: #ffffff; 
+    font-size: 1.5em; 
+    border: none; 
+    margin-top: 1em; 
+    padding: 0.8em 0; 
+    border-radius: 0.4em; 
+    background-color: rgb(20, 96, 196); 
+    cursor: pointer; 
+} 
+  
+button#submit-button:hover { 
+    background-color: rgb(65, 188, 73); 
+}
+
+button#submit-button-form { 
+    width: 100%; 
+    color: #ffffff; 
+    font-size: 1.0em; 
+    border: none; 
+    margin-top: 1em; 
+    padding: 0.8em 0; 
+    border-radius: 0.4em; 
+    background-color: rgb(20, 96, 196); 
+    cursor: pointer; 
+} 
+  
+button#submit-button-form:hover { 
+    background-color: rgb(65, 188, 73); 
+}
+
+.list-group-item-actions span {
+    display: flex;
+    color: #c00;
+  }
+
+  .list-group-item-actions {
+    width: 10%;
+    text-align: right;
+    min-width: 60px;
+  }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #fffcfc;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+button#myButton {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#44c767;
+	border-radius:34px;
+	border:2px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-style:italic;
+	padding:7px 18px;
+	text-decoration:none;
+    margin-top: 1em;
+
+}
+button#myButton:hover {
+    background:rgb(255, 255, 255);
+	top:1px;
+    background-color:#ffffff ;
+    color:#24b500;
+}
+button#myButton:active {
+    background:rgb(255, 255, 255);
+	top:1px;
+    background-color:#ffffff ;
+    color:#24b500;
+}
+
+button#myButton1 {
+
+	background-color:rgb(117, 177, 238);
+	border-radius:34px;
+	border:2px solid rgb(117, 177, 238);
+	display:flex;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-style:italic;
+	padding:7px 18px;
+	text-decoration:none;
+    margin-top: 1em;
+    justify-content: left;
+    float: left;
+
+    font-weight: bold;
+}
+button#myButton1:hover {
+    background:rgb(255, 255, 255);
+	background-color:#ffffff ;
+    color:rgb(117, 177, 238);
+	
+}
+button#myButton1:active {
+    background:linear-gradient(to bottom, #060606 5%, #010101 100%);
+	top:1px;
+    background-color:#0c0c0c ;
+}
+
+button#myButtonDel {
+
+	background-color: #d51515;
+	border-radius:34px;
+	border:2px solid #d51515;
+	display:flex;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-style:italic;
+	padding:7px 18px;
+	text-decoration:none;
+    margin-top: 1em;
+    justify-content: right;
+    float: right;
+
+}
+button#myButtonDel:hover {
+	background:rgb(255, 255, 255);
+	background-color:#ffffff ;
+    color:#d51515;
+}
+button#myButtonDel:active {
+    background:rgb(255, 255, 255);
+	top:1px;
+    background-color:#ffffff ;
+    color:#d51515;
+}
+
+button#myButtonProduct {
+
+	background-color: rgb(117, 177, 238);
+	border-radius:34px;
+	border:2px solid rgb(117, 177, 238);
+	display:flex;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-style:italic;
+	padding:7px 18px;
+	text-decoration:none;
+    margin-top: 1em;
+    justify-content: right;
+    float: right;
+
+}
+button#myButtonProduct:hover {
+	background:rgb(255, 255, 255);
+	background-color:#ffffff ;
+    color:rgb(117, 177, 238);
+}
+button#myButtonProduct:active {
+    background:rgb(255, 255, 255);
+	top:1px;
+    background-color:#ffffff ;
+    color:rgb(117, 177, 238);
+}
+
+button#myButtonUp {
+
+	background-color: #d5d215;
+	border-radius:34px;
+	border:2px solid #d5d215;
+	display:flex;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-style:italic;
+	padding:7px 16px;
+	text-decoration:none;
+    margin-top: 1em;
+
+}
+button#myButtonUp:hover {
+	background:rgb(255, 255, 255);
+	background-color:#ffffff ;
+    color:#d5d215;
+}
+button#myButtonUp:active {
+    background:rgb(255, 255, 255);
+	top:1px;
+    background-color:#ffffff ;
+    color:#d5d215;
+}
+
+button#myButtonBack {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#44c767;
+	border-radius:34px;
+	border:2px solid #18ab29;
+	display:flex;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-style:italic;
+	padding:7px 18px;
+	text-decoration:none;
+
+}
+button#myButtonBack:hover {
+    background:rgb(255, 255, 255);
+	top:1px;
+    background-color:#ffffff ;
+    color:#24b500;
+}
+button#myButtonBack:active {
+    background:rgb(255, 255, 255);
+	top:1px;
+    background-color:#ffffff ;
+    color:#24b500;
+}
+
+.table{
+    width: 1300px;
+    padding: 5px;
+    border-collapse: separate; border-spacing: 5px;
+
+
+}
+
+#ToBeApplied table{
+    width: 1300px;
+    padding: 5px;
+    border-collapse: separate; border-spacing: 5px;
+    margin-top: 50px;
+}
+
+.el{
+    border-radius: 10px;
+}
+
